@@ -20,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
     private boolean isequal = false;
     public void AddCharacter(View view) {
         TextView number = findViewById(R.id.result);
+        if(isequal==true)
+        {
+            isequal=false;
+            number.setText("0");
+        }
         Button btn = (Button)view;
         String btn_text = btn.getText().toString();
         String res = number.getText().toString();
@@ -110,6 +115,12 @@ public class MainActivity extends AppCompatActivity {
     public void CreateBackspace(View view) {
         TextView res = findViewById(R.id.result);
         String Text = res.getText().toString();
+        if(isequal==true)
+        {
+            isequal=false;
+            res.setText("0");
+            return;
+        }
         if(res.length()==1)
         {
             res.setText("0");

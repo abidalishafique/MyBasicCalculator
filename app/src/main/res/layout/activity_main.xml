@@ -37,7 +37,7 @@
         android:id="@+id/btn_nine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="15dp"
         android:background="#D8CECE"
         android:onClick="AddCharacter"
         android:text="9"
@@ -105,51 +105,48 @@
         android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="15dp"
         android:background="#D8CECE"
+        android:onClick="CreateBackspace"
         android:text="⌫"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_plus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_mod"
-        android:onClick="CreateBackspace"
-        />
+        app:layout_constraintStart_toEndOf="@+id/btn_mod" />
 
     <Button
         android:id="@+id/btn_plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="15dp"
         android:background="#D8CECE"
+        android:onClick="PerformOperation"
         android:text="+"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_nine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_minus"
-        android:onClick="PerformOperation"
-        />
+        app:layout_constraintStart_toEndOf="@+id/btn_minus" />
 
     <Button
         android:id="@+id/btn_div"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#D8CECE"
+        android:onClick="PerformOperation"
         android:text="÷"
         android:textSize="30sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btn_mod"
         app:layout_constraintEnd_toStartOf="@+id/btn_mod"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="PerformOperation"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="15dp"
         android:background="#D8CECE"
         android:onClick="AddCharacter"
         android:text="3"
@@ -161,9 +158,10 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="361dp"
-        android:layout_height="55dp"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
         android:layout_marginBottom="35dp"
+        android:background="#E6F1E6"
         android:gravity="right"
         android:text="0"
         android:textSize="36sp"
@@ -189,16 +187,15 @@
         android:id="@+id/btn_equal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="50dp"
         android:background="#D8CECE"
+        android:onClick="PerformEqualOperation"
         android:text="="
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_zero"
-        android:onClick="PerformEqualOperation"
-        />
+        app:layout_constraintStart_toEndOf="@+id/btn_zero" />
 
     <Button
         android:id="@+id/btn_one"
@@ -242,16 +239,16 @@
 
     <TextView
         android:id="@+id/sub_result"
-        android:layout_width="131dp"
-        android:layout_height="46dp"
+        android:layout_width="129dp"
+        android:layout_height="28dp"
         android:layout_marginBottom="2dp"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/result"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.932" />
+        app:layout_constraintVertical_bias="0.975" />
 
     <Button
         android:id="@+id/btn_four"
@@ -270,7 +267,7 @@
         android:id="@+id/btn_six"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="15dp"
         android:background="#D8CECE"
         android:onClick="AddCharacter"
         android:text="6"
